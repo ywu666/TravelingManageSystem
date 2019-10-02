@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="200.0" layoutY="83.0" prefHeight="27.0" prefWidth="204.0" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="83.0" />
+      <TextField layoutX="200.0" layoutY="141.0" prefHeight="27.0" prefWidth="204.0" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="200.0" />
+      <TextField layoutX="200.0" layoutY="198.0" prefHeight="27.0" prefWidth="204.0" AnchorPane.leftAnchor="200.0" />
+      <TextField layoutX="200.0" layoutY="252.0" prefHeight="27.0" prefWidth="204.0" AnchorPane.leftAnchor="200.0" />
+      <Text layoutX="157.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Hotel Deal" AnchorPane.leftAnchor="157.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" AnchorPane.leftAnchor="115.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" AnchorPane.leftAnchor="115.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employ" AnchorPane.leftAnchor="115.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel" AnchorPane.leftAnchor="115.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="154.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the information">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="486.0" layoutY="306.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="486.0" layoutY="349.0" mnemonicParsing="false" text="Cancel" />
+   </children>
+</AnchorPane>
