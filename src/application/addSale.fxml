@@ -42,7 +42,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button fx:id="submit" layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
-      <Button fx:id="cancel" layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <Button fx:id="submit" layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Confirm" />
+      <Button fx:id="cancel" layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="67.0" text="Cancel" />
    </children>
 </AnchorPane>

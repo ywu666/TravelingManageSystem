@@ -15,17 +15,7 @@ public class AddSalesController {
 	@FXML Button cancel;
 	@FXML
 	private void handleSubmit(){
-		Alert alert = new Alert(AlertType.CONFIRMATION, "Add a new sale ?", ButtonType.YES, ButtonType.NO);
-		alert.showAndWait();
-
-		if (alert.getResult() == ButtonType.YES) {
-			 //do stuff
 			loadSalesfxml();
-		}
-		   
-			
-         
-		
 	}
 	
 	@FXML

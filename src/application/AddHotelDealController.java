@@ -14,20 +14,9 @@ public class AddHotelDealController {
 	@FXML Button submit;
 	@FXML Button cancel;
 	@FXML
-	private void handleSubmit(){
-		Alert alert = new Alert(AlertType.CONFIRMATION, "Add a new Hotel Deal ?", ButtonType.YES, ButtonType.NO);
-		alert.showAndWait();
-
-		if (alert.getResult() == ButtonType.YES) {
-
-			//after confirmation, warning if the data is not complete
-			
-			//if the data is complete, go back to 
+	private void handleSubmit(){		
 			loadProductsfxml();
-		}
-		
-		
-		
+
 	}
 	
 	@FXML

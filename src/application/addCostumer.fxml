@@ -42,8 +42,8 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button fx:id="submit" layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
-      <Button fx:id="cancel" layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancle" text="Cancel" />
+      <Button fx:id="submit" layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Confirm" />
+      <Button fx:id="cancel" layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancle" prefHeight="27.0" prefWidth="67.0" text="Cancel" />
       <TextField layoutX="198.0" layoutY="336.0" prefHeight="27.0" prefWidth="204.0" AnchorPane.leftAnchor="205.0" />
       <Text layoutX="64.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" />
       <Text layoutX="208.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adress" AnchorPane.leftAnchor="205.0">

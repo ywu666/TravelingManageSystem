@@ -42,7 +42,7 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <Button layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
-      <Button layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancle" text="Cancel" />
+      <Button layoutX="486.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSubmit" text="Confirm" />
+      <Button layoutX="486.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCancle" prefHeight="27.0" prefWidth="67.0" text="Cancel" />
    </children>
 </AnchorPane>
