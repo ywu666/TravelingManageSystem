@@ -8,50 +8,42 @@ import javafx.scene.Parent;
 
 public class CostumersController {
 	
-	
+	//need to initialize the list 
 	
 	@FXML
 	private void handleMain(){
-		try {
-	        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-			Main.setStage(root);
-			
-		} catch (IOException exception) {
-			exception.printStackTrace();
-		}
+		loadFxml("main.fxml");
 	
 	}
 		
 	
 	
 	@FXML
-	private void handleAdd(){
-		try {
-	        Parent root = FXMLLoader.load(getClass().getResource("addCostumer.fxml"));
-			Main.setStage(root);
-			
-		} catch (IOException exception) {
-			exception.printStackTrace();
-		}
+	private void handleAdd(){      
+		loadFxml("addCostumer.fxml");
 		
 	}
 	
 	
 	@FXML
 	private void handleModify(){
+		loadFxml("addCostumer.fxml");
+		
+		
+	}
+	
+	
+
+	public void loadFxml(String fxml){
+		
 		try {
-	        Parent root = FXMLLoader.load(getClass().getResource("addCostumer.fxml"));
+	        Parent root = FXMLLoader.load(getClass().getResource(fxml));
 			Main.setStage(root);
 			
 		} catch (IOException exception) {
 			exception.printStackTrace();
 		}
-		
 	}
-	
-	
-	
-	
 	
 
 }

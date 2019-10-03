@@ -19,7 +19,10 @@ public class AddHotelDealController {
 		alert.showAndWait();
 
 		if (alert.getResult() == ButtonType.YES) {
-		    //do stuff
+
+			//after confirmation, warning if the data is not complete
+			
+			//if the data is complete, go back to 
 			loadProductsfxml();
 		}
 		

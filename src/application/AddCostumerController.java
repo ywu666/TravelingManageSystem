@@ -15,7 +15,7 @@ public class AddCostumerController {
 	@FXML Button cancel;
 	
 	@FXML
-	private void handleSubmit(){
+	private void handleSubmit(){  //warning if the name or the credit card number is blank
 		Alert alert = new Alert(AlertType.CONFIRMATION, "Add a new sale ?", ButtonType.YES, ButtonType.NO);
 		alert.showAndWait();
 
@@ -30,7 +30,7 @@ public class AddCostumerController {
 	}
 	
 	@FXML
-	private void handleCancel(){            
+	private void handleCancle(){            
 		loadCostumerfxml();
 	}
 	

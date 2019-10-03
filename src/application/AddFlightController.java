@@ -14,12 +14,18 @@ public class AddFlightController {
 	@FXML Button submit;
 	@FXML Button cancel;
 	@FXML
-	private void handleSubmit(){
+	private void handleSubmit(){ //
 		Alert alert = new Alert(AlertType.CONFIRMATION, "Add a new Flight ?", ButtonType.YES, ButtonType.NO);
 		alert.showAndWait();
 
+		
 		if (alert.getResult() == ButtonType.YES) {
-		    //do stuff
+		  
+			
+			
+			//after confirmation, warning if the data is not complete
+			
+			//if the data is complete, go back to 
 			loadProductsfxml();
 		}
 		
