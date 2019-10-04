@@ -39,6 +39,7 @@ public class MainController {
 	
 	@FXML
 	private void handleEmployess(){
+		loadFxml("customers.fxml");
 	}
 	
 	public void loadFxml(String fxml){

@@ -7,14 +7,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <children>
-      <Text layoutX="139.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Travel Agency Managing System" wrappingWidth="352.37255859375">
+      <Text layoutX="145.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="       Managing System" wrappingWidth="352.37255859375">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Button fx:id="sale" layoutX="190.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleSales" prefHeight="27.0" prefWidth="250.0" text="Managing Sales" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="126.0" />
-      <Button fx:id="product" layoutX="193.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleProducts" prefHeight="27.0" prefWidth="250.0" text="Managing Products" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="166.0" />
-      <Button fx:id="costumer" layoutX="193.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleCostumers" prefHeight="27.0" prefWidth="250.0" text="Managing Costumers" AnchorPane.leftAnchor="190.0" />
+      <Button fx:id="product" layoutX="190.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleProducts" prefHeight="27.0" prefWidth="250.0" text="Managing Products" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="210.0" />
+      <Button fx:id="costumer" layoutX="190.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleCostumers" prefHeight="27.0" prefWidth="250.0" text="Managing Costumers" AnchorPane.leftAnchor="190.0" />
       <Button fx:id="employess" layoutX="194.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleEmployess" prefHeight="27.0" prefWidth="250.0" text="Managing Employess" AnchorPane.leftAnchor="190.0" />
+      <Button fx:id="sale" layoutX="190.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleSales" prefHeight="26.0" prefWidth="250.0" text="Managing  Sales" />
    </children>
 </AnchorPane>

@@ -16,12 +16,12 @@
           <TableColumn fx:id="priceColumn" prefWidth="208.0" text="Price" />
         </columns>
       </TableView>
-      <Button layoutX="451.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleHotelDeal" prefHeight="12.0" prefWidth="114.0" text="Add Hotel Deal" />
+      <Button layoutX="451.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleHotelDeal" prefHeight="26.0" prefWidth="132.0" text="Add Hotel Deal" />
       <Text layoutX="103.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of products:" wrappingWidth="275.58984375">
          <font>
             <Font size="28.0" />
          </font>
       </Text>
-      <Button layoutX="451.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFlight" prefHeight="27.0" prefWidth="114.0" text="Add Flight" />
+      <Button layoutX="451.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleFlight" prefHeight="27.0" prefWidth="132.0" text="Add Flight" />
    </children>
 </AnchorPane>

@@ -17,9 +17,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			STAGE = primaryStage;
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
-			Parent root = loader.load();
-			setStage(root);
+			Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+			Main.setStage(root);
 			STAGE.show();
 		} catch(Exception e) {
 			e.printStackTrace();

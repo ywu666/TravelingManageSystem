@@ -5,10 +5,8 @@ import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Alert.AlertType;
+
 
 public class AddCostumerController {
 	@FXML Button submit;
@@ -16,7 +14,6 @@ public class AddCostumerController {
 	
 	@FXML
 	private void handleSubmit(){  //warning if the name or the credit card number is blank	
-			 //do stuff
 			loadCostumerfxml();
 	}
 		   
