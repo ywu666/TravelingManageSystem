@@ -12,9 +12,9 @@
             <Font size="22.0" />
          </font>
       </Text>
-      <Button fx:id="product" layoutX="190.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleProducts" prefHeight="27.0" prefWidth="250.0" text="Managing Products" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="210.0" />
       <Button fx:id="costumer" layoutX="190.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleCostumers" prefHeight="27.0" prefWidth="250.0" text="Managing Costumers" AnchorPane.leftAnchor="190.0" />
       <Button fx:id="employess" layoutX="194.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleEmployess" prefHeight="27.0" prefWidth="250.0" text="Managing Employess" AnchorPane.leftAnchor="190.0" />
       <Button fx:id="sale" layoutX="190.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleSales" prefHeight="26.0" prefWidth="250.0" text="Managing  Sales" />
+      <Button fx:id="product" layoutX="190.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleProducts" prefHeight="27.0" prefWidth="250.0" text="Managing Products" />
    </children>
 </AnchorPane>

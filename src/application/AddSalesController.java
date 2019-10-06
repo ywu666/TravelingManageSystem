@@ -23,13 +23,15 @@ public class AddSalesController {
 	
 	
 	public void loadSalesfxml(){
-		
 		try {
-	        Parent root = FXMLLoader.load(getClass().getResource("sales.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("sales.fxml"));
+			Parent root = loader.load();
+			SalesController controller = loader.getController();
+			controller.initialiseList();
 			Main.setStage(root);
 			
-		} catch (IOException exception) {
-			exception.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 

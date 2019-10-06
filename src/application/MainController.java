@@ -17,7 +17,6 @@ public class MainController {
 	
 	@FXML
 	private void handleCostumers() {
-		
 		loadFxml("customers.fxml");
 	
 	}
@@ -25,8 +24,17 @@ public class MainController {
 	
 	@FXML
 	private void handleSales(){
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("sales.fxml"));
+			Parent root = loader.load();
+			SalesController controller = loader.getController();
+			controller.initialiseList();
+			Main.setStage(root);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
-		loadFxml("sales.fxml");
 	}
 	
 	
@@ -39,7 +47,7 @@ public class MainController {
 	
 	@FXML
 	private void handleEmployess(){
-		loadFxml("customers.fxml");
+		loadFxml("employess.fxml");
 	}
 	
 	public void loadFxml(String fxml){
