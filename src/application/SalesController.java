@@ -48,25 +48,30 @@ public class SalesController {   //need to initialize the table
 	@FXML
 	private void handleDelete(){   
 		//warning alert if the product is a flight
-        Sale selection = table.getSelectionModel().getSelectedItem();
-        
-        if (selection.getProduct().equals("Flight")){
-        	Alert alert = new Alert(AlertType.WARNING, "Delete the flight will need a cancellation fee.", ButtonType.OK);
-    		alert.showAndWait();
-    		
-        }
-        
-		Alert alert = new Alert(AlertType.CONFIRMATION, "Delete " + "Sale" + " ?", ButtonType.YES, ButtonType.NO);
-		alert.showAndWait();
+		Sale selection = table.getSelectionModel().getSelectedItem();
+		if(selection == null){
+			Alert alert = new Alert(AlertType.WARNING, "Please select something.", ButtonType.OK);
+			alert.showAndWait();
+		}else{
+			if (selection.getProduct().equals("Flight")){
+				Alert alert = new Alert(AlertType.WARNING, "Delete the flight will need a cancellation fee.", ButtonType.OK);
+				alert.showAndWait();
 
-		if (alert.getResult() == ButtonType.YES) {
-			table.getItems().remove(selection);
+			}
+
+			Alert alert = new Alert(AlertType.CONFIRMATION, "Delete " + "Sale" + " ?", ButtonType.YES, ButtonType.NO);
+			alert.showAndWait();
+
+			if (alert.getResult() == ButtonType.YES) {
+				table.getItems().remove(selection);
+			}
 		}
+
 
 	}
 
 
-	public void loadFxml(String fxml){
+	private void loadFxml(String fxml){
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource(fxml));
 			Main.setStage(root);
@@ -91,7 +96,7 @@ public class SalesController {   //need to initialize the table
 		ProductsColumn.setCellValueFactory(new PropertyValueFactory<>("product"));
 		EmployessColumn.setCellValueFactory(new PropertyValueFactory<>("employee"));
 		DateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
-		
+
 		table.getItems().addAll(FXCollections.observableList(sales));
 	}
 

@@ -17,7 +17,16 @@ public class MainController {
 	
 	@FXML
 	private void handleCostumers() {
-		loadFxml("customers.fxml");
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("customers.fxml"));
+			Parent root = loader.load();
+			CostumersController controller = loader.getController();
+			controller.initialiseList();
+			Main.setStage(root);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	
 	}
 	
@@ -40,26 +49,37 @@ public class MainController {
 	
 	@FXML
 	private void handleProducts(){
-		loadFxml("products.fxml");
+		
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("products.fxml"));
+			Parent root = loader.load();
+			ProductsController controller = loader.getController();
+			controller.initialiseList();
+			Main.setStage(root);
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	
 	
 	@FXML
 	private void handleEmployess(){
-		loadFxml("employess.fxml");
+		//loadFxml("employess.fxml");
+		//similar to costumers
 	}
-	
-	public void loadFxml(String fxml){
-		
-		try {
-	        Parent root = FXMLLoader.load(getClass().getResource(fxml));
-			Main.setStage(root);
-			
-		} catch (IOException exception) {
-			exception.printStackTrace();
-		}
-	}
+//	
+//	private void loadFxml(String fxml){
+//		
+//		try {
+//	        Parent root = FXMLLoader.load(getClass().getResource(fxml));
+//			Main.setStage(root);
+//			
+//		} catch (IOException exception) {
+//			exception.printStackTrace();
+//		}
+//	}
 
 
 }

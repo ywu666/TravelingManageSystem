@@ -22,7 +22,7 @@ public class AddSalesController {
 	}
 	
 	
-	public void loadSalesfxml(){
+	private void loadSalesfxml(){
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("sales.fxml"));
 			Parent root = loader.load();

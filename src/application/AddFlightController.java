@@ -12,7 +12,7 @@ public class AddFlightController {
 	@FXML Button submit;
 	@FXML Button cancel;
 	@FXML
-	private void handleSubmit(){ //
+	private void handleSubmit(){ 
 		loadProductsfxml();
 	}
 
@@ -25,11 +25,14 @@ public class AddFlightController {
 
 	private void loadProductsfxml(){
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("products.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("products.fxml"));
+			Parent root = loader.load();
+			ProductsController controller = loader.getController();
+			controller.initialiseList();
 			Main.setStage(root);
-
-		} catch (IOException exception) {
-			exception.printStackTrace();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
